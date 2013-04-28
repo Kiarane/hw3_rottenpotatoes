@@ -25,14 +25,14 @@ Scenario: sort movies alphabetically
  # your steps here 
  When I check the following rating: G,R,PG-13,PG
  And I press "Refresh"
- When I follow "Movie Title"
+ And I follow "Movie Title"
  Then I should see "Aladdin" before "Amelie"
  
 Scenario: sort movies in increasing order of release date
  # your steps here 
  When I check the following ratings: G,R,PG-13,PG
  And I press "Refresh"
- When I follow "Release Date"
- Then I should see "1968-04-06" before "1984-10-26"
+ And I follow "Release Date"
+ Then I should see "2001: A Space Odyssey" before "Raiders of the Lost Ark"
   
 
